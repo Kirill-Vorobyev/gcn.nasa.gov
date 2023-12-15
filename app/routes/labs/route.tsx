@@ -25,7 +25,7 @@ export default function () {
   return (
     <>
       <Header />
-      <main id="main-content" className="usa-prose--dark">
+      <main id="main-content">
         <Outlet />
       </main>
       <Footer />
