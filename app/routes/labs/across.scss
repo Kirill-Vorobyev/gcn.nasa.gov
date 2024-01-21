@@ -1,0 +1,26 @@
+/*
+ * ACROSS
+ */
+
+#across-landing-content {
+  & {
+    background-color: #0c0f18;
+    color: white;
+  }
+
+  & p {
+    color: rgb(white, 0.7);
+  }
+}
+
+.across-landing-overview {
+  & {
+    margin-top: 20px;
+  }
+
+  & img {
+    width: auto;
+    height: 600px;
+    margin-left: 0px;
+  }
+}

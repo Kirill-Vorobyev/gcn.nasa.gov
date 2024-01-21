@@ -13,10 +13,10 @@ import {
   Tag,
 } from '@trussworks/react-uswds'
 
-import neutronStarMerger from './labs/NeutronStarMerger_Shot1_4KStill4_v01_print.jpg'
-import { ParallaxImage } from './labs/parallax/ParallaxImage'
+import neutronStarMerger from '../labs/NeutronStarMerger_Shot1_4KStill4_v01_print.jpg'
+import { ParallaxImage } from '../labs/parallax/ParallaxImage'
 
-import mma from './labs/mma.png'
+import mma from '../labs/mma.png'
 
     <ParallaxImage src={neutronStarMerger} alt="An artist depiction of the neutron star merger GW 170817">
       ### The Dawn of a New Era in Astronomy
@@ -28,7 +28,7 @@ import mma from './labs/mma.png'
 
     <GridContainer className="usa-section" style={{minWidth:'75%'}}>
 
-      <Grid row style={{marginTop:'20px'}}>
+      <Grid row className='across-landing-overview'>
         <Grid col>
           # Overview
           The emerging field of multimessenger astronomy combines the observation of disparate messenger signals to reveal unique
@@ -52,11 +52,6 @@ import mma from './labs/mma.png'
           <img
             src={mma}
             alt="An mossaic of multimessenger sources"
-            style={{
-              width: 'auto',
-              height: '600px',
-              marginLeft: '0px'
-            }}
           />
         </Grid>
       </Grid>
