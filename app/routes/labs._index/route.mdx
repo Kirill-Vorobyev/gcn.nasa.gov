@@ -16,10 +16,11 @@ import {
 import neutronStarMerger from '../labs/NeutronStarMerger_Shot1_4KStill4_v01_print.jpg'
 import { ParallaxImage } from '../labs/parallax/ParallaxImage'
 
+import { NewsCard } from '../labs._index/components/NewsCard'
 import mma from '../labs/mma.png'
 
     <ParallaxImage src={neutronStarMerger} alt="An artist depiction of the neutron star merger GW 170817">
-      ### The Dawn of a New Era in Astronomy
+      ## The Dawn of a New Era in Astronomy
       Multimessenger and time-domain astrophysics are opening entirely new
       windows on the Universe. The Astrophysics Cross-Observatory Science
       Support (ACROSS) center is an initiative to facilitate communication,
@@ -28,8 +29,8 @@ import mma from '../labs/mma.png'
 
     <GridContainer className="usa-section" style={{minWidth:'75%'}}>
 
-      <Grid row className='across-landing-overview'>
-        <Grid col>
+      <Grid row className='overview'>
+          <Grid col={7}>
           # Overview
           The emerging field of multimessenger astronomy combines the observation of disparate messenger signals to reveal unique
           information about astrophysical sources. The four extrasolar messengers that make up multimessenger astronomy are electromagnetic
@@ -47,34 +48,31 @@ import mma from '../labs/mma.png'
 
           Multimessenger.nasa.gov aims to support this emerging field by consolidating important information on resources available to
           scientists around the world to enable future discoveries.
-        </Grid>
-        <Grid col>
+          </Grid>
+          <Grid col={5}>
           <img
+            className='overview-image'
             src={mma}
             alt="An mossaic of multimessenger sources"
           />
-        </Grid>
+          </Grid>
       </Grid>
 
-      <Grid row style={{marginTop:'150px'}}>
+      <Grid row>
         <CardGroup>
-
           <Card
             headerFirst
             gridLayout={{ tablet: { col: 5 } }}
-            containerProps={{style: { borderRadius: '10px', borderWidth: '0px', backgroundColor: '#161821' } }}
+            className="survey-left"
             >
-            <CardBody className="padding-4 text-base-lightest">
-              <h1 className="text-left" style={{paddingTop: '20px'}}>
-                The Decadal Survey Findings on Multi-messenger Astronomy
-              </h1>
-            </CardBody>
+              # The Decadal Survey Findings on Multi-messenger Astronomy
           </Card>
 
           <Card
             headerFirst
             gridLayout={{ tablet: { col: 7 } }}
             containerProps={{style: { borderRadius: '10px', borderWidth: '0px', backgroundColor: '#161821' } }}
+            className='survey-right'
             >
             <CardBody className="padding-top-4 text-base-lightest">
               <p className="text-italic" style={{paddingTop: '20px'}}>
@@ -92,6 +90,9 @@ import mma from '../labs/mma.png'
 
       <Grid row style={{marginTop:'75px'}}>
         # Program News
+      </Grid>
+
+      <Grid>
         <CardGroup>
           <Card
             headerFirst
@@ -158,26 +159,45 @@ import mma from '../labs/mma.png'
 
       <Grid row style={{marginTop:'75px'}}>
         # Science News
+      </Grid>
 
+      <Grid row>
         <CardGroup>
-          <Card
-            gridLayout={{ tablet: { col: 4 } }}
-            containerProps={{style: { borderRadius: '10px', borderWidth: '0px', backgroundColor: '#161821' } }}
-            >
-            <CardHeader>
-              <h3 className="usa-card__heading text-base-lightest">NASA Selects Proposals to Study Stellar Explosions, Galaxies, Stars</h3>
-            </CardHeader>
-            <CardMedia>
-              <img src={neutronStarMerger} alt="An artist depiction of the neutron star merger GW 170817" />
-            </CardMedia>
-            <CardBody className="text-base-lightest">
-              <p>Lorem ipsum dolor sit amet, eum sint primis gubergren an.</p>
-            </CardBody>
-            <CardFooter>
-              <Button type="button" outline>Link</Button>
-            </CardFooter>
-          </Card>
-
+          <NewsCard 
+            title="NASA Selects Proposals to Study Stellar Explosions, Galaxies, Stars" 
+            body="Lorem ipsum dolor sit amet, eum sint primis gubergren an."
+            link="https://example.com"
+            imageSrc={neutronStarMerger}
+            imageDescription="An artist depiction of the neutron star merger GW 170817"
+          />
+           <NewsCard 
+            title="NASA Selects Proposals to Study Stellar Explosions, Galaxies, Stars" 
+            body="Lorem ipsum dolor sit amet, eum sint primis gubergren an."
+            link="https://example.com"
+            imageSrc={neutronStarMerger}
+            imageDescription="An artist depiction of the neutron star merger GW 170817"
+          />
+           <NewsCard 
+            title="NASA Selects Proposals to Study Stellar Explosions, Galaxies, Stars" 
+            body="Lorem ipsum dolor sit amet, eum sint primis gubergren an."
+            link="https://example.com"
+            imageSrc={neutronStarMerger}
+            imageDescription="An artist depiction of the neutron star merger GW 170817"
+          />
+           <NewsCard 
+            title="NASA Selects Proposals to Study Stellar Explosions, Galaxies, Stars" 
+            body="Lorem ipsum dolor sit amet, eum sint primis gubergren an."
+            link="https://example.com"
+            imageSrc={neutronStarMerger}
+            imageDescription="An artist depiction of the neutron star merger GW 170817"
+          />
+           <NewsCard 
+            title="NASA Selects Proposals to Study Stellar Explosions, Galaxies, Stars" 
+            body="Lorem ipsum dolor sit amet, eum sint primis gubergren an."
+            link="https://example.com"
+            imageSrc={neutronStarMerger}
+            imageDescription="An artist depiction of the neutron star merger GW 170817"
+          />
         </CardGroup>
       </Grid>
 

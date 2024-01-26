@@ -18,7 +18,7 @@ interface ParallaxImageProps {
 const defaultContainerStyle: CSSProperties = {
   overflow: 'hidden',
   position: 'relative',
-  height: '800px',
+  height: '700px',
 }
 
 // Define a default text style
@@ -27,7 +27,7 @@ const defaultTextStyle: CSSProperties = {
   top: '10%',
   left: '29%',
   transform: 'translateX(-50%)',
-  width: '500px',
+  width: '526px',
   fontSize: '1.25rem',
   zIndex: 1,
   whiteSpace: 'normal',
